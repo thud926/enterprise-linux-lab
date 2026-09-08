@@ -1,0 +1,33 @@
+---
+- name: Enterprise Linux Baseline Configuration
+  hosts: enterprise
+  gather_facts: true
+
+  tasks:
+    - name: Ensure baseline system utilities are installed
+      ansible.builtin.package:
+        name:
+          - curl
+          - wget
+          - git
+          - rsync
+          - htop
+          - vim-enhanced
+        state: present
+
+    - name: Set system timezone to America/Chicago
+      community.general.timezone:
+        name: America/Chicago
+
+    - name: Ensure SSH password authentication is disabled (Keys Only)
+      ansible.builtin.lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^#?PasswordAuthentication'
+        line: 'PasswordAuthentication no'
+      notify: Restart sshd
+
+  handlers:
+    - name: Restart sshd
+      ansible.builtin.service:
+        name: sshd
+        state: restarted
