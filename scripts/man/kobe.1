@@ -1,0 +1,14 @@
+.TH KOBE 1 "September 2026" "Bunkwerks Labs" "User Commands"
+.SH NAME
+kobe \- precision long-range transmission of files to remote hosts
+.SH SYNOPSIS
+.B kobe
+[\fIOPTIONS\fR] \fISOURCE_FILE\fR... \fIUSER@REMOTE_HOST:/DESTINATION/PATH\fR
+.SH DESCRIPTION
+.B kobe
+is a high-accuracy, long-distance utility wrapper for scp(1). Unlike yeet, which discards items blindly, kobe calculates a perfect trajectory to land your data exactly where it belongs on a remote server.
+.SH SEE ALSO
+.BR scp (1),
+.BR ssh (1)
+.SH AUTHOR
+Kenneth Ralph Morgan

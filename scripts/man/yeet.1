@@ -1,0 +1,42 @@
+.TH YEET 1 "September 2026" "Bunkwerks Labs" "User Commands"
+.SH NAME
+yeet \- aggressively remove files and directories from existence
+.SH SYNOPSIS
+.B yeet
+[\ \-i\ ]
+[\ \-r\ ]
+[\ \-f\ ]
+.I FILE...
+.SH DESCRIPTION
+.I FILE...
+.SH SYNOPSIS
+.B yeet
+is a modern, high-velocity alias and wrapper for the standard 
+.BR rm (1)
+utility. It safely or violently ejects specified files and directories into the digital void.
+.PP
+When invoked, 
+.B yeet
+processes specified target paths with maximum prejudice. 
+.SH OPTIONS
+.TP
+.B \-i, \-\-interactive
+Prompt before every removal. Recommended for mobile client safety.
+.TP
+.B \-r, \-\-recursive
+Recursively yeet directories and their contents into non-existence.
+.TP
+.B \-f, \-\-force
+Ignore non-existent files and arguments, never prompt. Absolute maximum yeet.
+.SH EXAMPLES
+.TP
+.B yeet build.log
+Interactively remove a single annoying log file.
+.TP
+.B yeet \-rf /tmp/junk/
+Recursively and forcefully vaporize an unwanted directory tree.
+.SH SEE ALSO
+.BR rm (1),
+.BR unlink (2)
+.SH AUTHOR
+Kenneth Ralph Morgan

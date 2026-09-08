@@ -1,0 +1,21 @@
+.TH YOINK 1 "September 2026" "Bunkwerks Labs" "User Commands"
+.SH NAME
+yoink \- aggressively snatch files from remote servers or local paths
+.SH SYNOPSIS
+.B yoink
+[\fI-o OUTPUT\fR] [\fI-f\fR] \fIURL_OR_PATH\fR
+.SH DESCRIPTION
+.B yoink
+is a modern, high-velocity wrapper for curl(1) and cp(1). It violently snatches specified assets from the digital ether and deposits them directly into your current working directory.
+.SH OPTIONS
+.TP
+.BI \-o ", \-\-output " FILE
+Specify a custom name for the snatched file.
+.TP
+.BR \-f ", " \-\-force
+Overwrite existing files without warning. Maximum disrespect.
+.SH SEE ALSO
+.BR curl (1),
+.BR cp (1)
+.SH AUTHOR
+Kenneth Ralph Morgan
