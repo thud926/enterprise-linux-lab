@@ -1,0 +1,23 @@
+# System & Editor Files
+.DS_Store
+*.swp
+*~
+.vscode/
+
+# Keys, Credentials & Certificates
+*.pem
+*.key
+*.pub
+id_rsa
+id_ed25519
+*.vault
+
+# Large Virtualization & ISO Files
+*.iso
+*.qcow2
+*.img
+*.vmdk
+
+# Logs & Temporary Files
+*.log
+*.tmp
