@@ -56,3 +56,9 @@ enterprise-linux-lab/
 │   └── man/                # Native Unix man pages (yeet.1, yoink.1, kobe.1)
 └── docs/                   # Visual assets and post-mortem logs
     └── assets/             # Terminal captures and architecture diagrams
+
+---
+
+## 📄 Technical Post-Mortems & Verification Logs
+
+- **[Bunkwerks Trilogy Installation & Cross-Node Verification](docs/post-mortems/bunkwerks-verification.md)**: End-to-end testing log covering custom binary installation, manual page compilation, remote file fetching (`yoink`), SSH transport (`kobe`), and interactive target removal (`yeet`).
